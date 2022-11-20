@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.hackathon.droncall.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_CheckRemindersFragment"
+            app:destination="@id/CheckRemindersFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_AddMedicalRecordFragment"
+            app:destination="@id/AddMedicalRecordFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CheckRemindersFragment"
+        android:name="com.hackathon.droncall.CheckRemindersFragment"
+        android:label="@string/check_reminders_fragment_label"
+        tools:layout="@layout/fragment_check_reminders">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/AddMedicalRecordFragment"
+        android:name="com.hackathon.droncall.AddMedicalRecordFragment"
+        android:label="@string/check_reminders_fragment_label"
+        tools:layout="@layout/fragment_add_medical_record">
+
+    </fragment>
+</navigation>
